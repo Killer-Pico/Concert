@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронювання квитків</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="body">
+       <a href="#main-content" class="skip-link">Перейти до основного вмісту</a>
+    <header>
+   <h1>Подія року: Концерт у вашему місті</h1>
+   <nav>
+    <a href id="#about-event">Про подію</a>
+    <a href id="#tickets">Квитки</a>
+    <a href id="#contact">Контакти</a>
+   </nav>
+    </header>
+    <main id="main-content">
+    <section id="About-event">
+        <h2>Про подію</h2>
+        <p>Приєднуйтесь до незабутнього концерту із зірками украхнської сцени. Це подія, яку не можна пропустити! Насолождуйтесь живою музикою, неймовірною атмосферою та хорошим настроєм.</p>
+        <p><strong>Дата:</strong> 25 березня 2025 року</p>
+        <p><strong>Місце:</strong> "Концертна зала Україна", м.Київ</p>
+    </section>
+    <section id="Tickets">
+        <h2>Квитки</h2>
+        <p>Виберіть тип квитка та заповніть форму бронювання:</p>
+        <form action="/submit-ticket" method="post">
+            <select id="ticket-type" name="ticket-type" required>
+                <option value="standard">Стандартний - 500 грн</option>
+                <option value="vip">VIP - 1000 грн</option>
+            </select> 
+            <label>
+            <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
+            </label>
+            <label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com">
+            </label>
+            <label>
+            <input type="tel" id="phone" name="phone" placeholder="+380123456789" required>
+            </label>
+            <button type="submit">Забронювати</button>
+        </form>
+    </section>
+    <section id="Contact">
+    <h2>Контакти</h2>
+    <p>Зв'яжіться з нами, якщо маєте запитання:</p>
+    <address>
+        <p>Email: <a href="mailto:info@tickets.ua"></a>info@tickets.ua</p>
+        <p>Телефон: <a href="tel:+380987654321">+380 98 765 4321</a></p>
+    </address>
+    </section>
+    </main>
+    <footer> "&copy; 2025 Бронювання квитків. Усі права захищено".</footer>
+</body>
+</html>
