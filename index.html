@@ -11,39 +11,45 @@
     <header>
    <h1>Подія року: Концерт у вашему місті</h1>
    <nav>
-    <a href id="#about-event">Про подію</a>
-    <a href id="#tickets">Квитки</a>
-    <a href id="#contact">Контакти</a>
+     <ul class="nav-list">
+        <li><a href="#about-event">Про подію</a></li>
+        <li><a href="#tickets">Квитки</a></li>
+        <li><a href="#contact">Контакти</a></li>
+      </ul>
    </nav>
     </header>
     <main id="main-content">
-    <section id="About-event">
+
+    <section id="about-event">
         <h2>Про подію</h2>
         <p>Приєднуйтесь до незабутнього концерту із зірками украхнської сцени. Це подія, яку не можна пропустити! Насолождуйтесь живою музикою, неймовірною атмосферою та хорошим настроєм.</p>
         <p><strong>Дата:</strong> 25 березня 2025 року</p>
         <p><strong>Місце:</strong> "Концертна зала Україна", м.Київ</p>
     </section>
-    <section id="Tickets">
+
+    <section id="tickets">
         <h2>Квитки</h2>
         <p>Виберіть тип квитка та заповніть форму бронювання:</p>
         <form action="/submit-ticket" method="post">
+             <label for="ticket-type">Тип квитка:</label>
             <select id="ticket-type" name="ticket-type" required>
                 <option value="standard">Стандартний - 500 грн</option>
                 <option value="vip">VIP - 1000 грн</option>
             </select> 
-            <label>
+        <label for="name">Ваше ім’я:</label>
             <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
-            </label>
-            <label>
+           
+             <label for="email">Електронна пошта:</label>
             <input type="email" id="email" name="email" placeholder="example@mail.com">
-            </label>
-            <label>
+            
+            <label for="phone">Телефон:</label>
             <input type="tel" id="phone" name="phone" placeholder="+380123456789" required>
-            </label>
+           
             <button type="submit">Забронювати</button>
         </form>
+
     </section>
-    <section id="Contact">
+    <section id="contact">
     <h2>Контакти</h2>
     <p>Зв'яжіться з нами, якщо маєте запитання:</p>
     <address>
